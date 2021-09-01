@@ -20,3 +20,4 @@ pub mod tls;
 pub mod uri;
 
 mod chunked;
+mod tcp_stream;

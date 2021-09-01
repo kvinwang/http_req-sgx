@@ -9,10 +9,11 @@ use std::{
     convert::TryFrom,
     fmt,
     io::{self, ErrorKind, Read, Write},
-    net::{TcpStream, ToSocketAddrs},
+    net::ToSocketAddrs,
     path::Path,
     time::{Duration, Instant},
 };
+use crate::tcp_stream::TcpStream;
 
 const CR_LF: &str = "\r\n";
 const BUF_SIZE: usize = 8 * 1024;
